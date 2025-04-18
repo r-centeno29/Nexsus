@@ -163,11 +163,15 @@ Exemplo simplificado das classes de domínio:
 +---------------------+
 
 
-ID	Descrição	Módulo
-RF01	Ler arquivos PDF e extrair dados de atendimento	1
-RF02	Processar arquivos Excel para completar dados de pacientes	2
-RF03	Integração com webservice CNES para dados profissionais	3
-RF04	Integração com ViaCEP para dados de endereço	4
+ID	  Descrição	                                                  Módulo
+RF01	Ler arquivos PDF e extrair dados de atendimento	              1
+---
+RF02	Processar arquivos Excel para completar dados de pacientes	  2
+---
+RF03	Integração com webservice CNES para dados profissionais	      3
+---
+RF04	Integração com ViaCEP para dados de endereço	                4
+---
 RF05	Integração com CADWEB para validação de CNS	5
 RF06	Cadastro manual de estabelecimentos	6
 RF07	Gerenciamento de usuários do sistema	7
