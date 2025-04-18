@@ -162,4 +162,28 @@ Exemplo simplificado das classes de domínio:
 | - ch_prof           |
 +---------------------+
 
-... (Demais classes conforme as tabelas)
+
+ID	Descrição	Módulo
+RF01	Ler arquivos PDF e extrair dados de atendimento	1
+RF02	Processar arquivos Excel para completar dados de pacientes	2
+RF03	Integração com webservice CNES para dados profissionais	3
+RF04	Integração com ViaCEP para dados de endereço	4
+RF05	Integração com CADWEB para validação de CNS	5
+RF06	Cadastro manual de estabelecimentos	6
+RF07	Gerenciamento de usuários do sistema	7
+RF08	Registro de auditoria de acesso	8
+RF09	Processamento de arquivos TXT com procedimentos	9
+RF10	Geração automática de registros de produção	10
+RF11	Exportação para banco Firebird (S_PRD)	11
+RF12	Geração de estatísticas financeiras	12
+RF13	Dashboard interativo para análise de dados	13
+Requisitos Não-Funcionais
+ID	Categoria	Descrição
+RNF01	Desempenho	Processar arquivos PDF de até 50 páginas em <5s
+RNF02	Segurança	Autenticação de usuários com senha criptografada
+RNF03	Usabilidade	Interface intuitiva com seleção de arquivos por diálogo
+RNF04	Confiabilidade	Validação de dados antes da inserção no banco
+RNF05	Compatibilidade	Suporte a Windows 10+ e principais navegadores
+RNF06	Disponibilidade	Sistema operacional 24/7 com tolerância a falhas
+RNF07	Capacidade	Armazenar até 1 milhão de registros de atendimento
+RNF08	Escalabilidade	Arquitetura que permite aumento de capacidade
