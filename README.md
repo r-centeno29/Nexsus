@@ -18,36 +18,38 @@ Criar uma aplicação web que armazene dados de faturamento em um banco de dados
 
 ## 2. Arquitetura e Tecnologias
 ### Back-end e Segurança:
-✅	Framework Principal: Django + Django REST Framework (DRF) O Django já vem configurado com proteções embutidas (contra CSRF, XSS, SQL Injection etc.) e, usando o DRF, você conseguirá estruturar APIs RESTful seguras para a comunicação com o front-end.
-✅	Autenticação e Autorização:
+**Framework Principal:**
+Django + Django REST Framework (DRF) O Django já vem configurado com proteções embutidas (contra CSRF, XSS, SQL Injection etc.) e, usando o DRF, você conseguirá estruturar APIs RESTful seguras para a comunicação com o front-end.<br>
+**Autenticação e Autorização:**
 +	autenticação robusta utilizando JSON Web Tokens (JWT) ou OAuth2 para garantir que somente usuários autorizados acessem os dados.
 +	sistema de controle de acesso baseado em papéis (RBAC), para definir quais operações cada tipo de usuário pode executar.
-✅  Banco de Dados: Utilizaremos o PostgreSQL para base produção e SQLite para base desenvolvimento.
+**Banco de Dados:**
++ Utilizaremos o PostgreSQL para base produção e SQLite para base desenvolvimento.
 +	Conexões via TLS para garantir a confidencialidade em trânsito.
 +	Mecanismos de criptografia e backups seguros para proteção dos dados em repouso.
-✅  Integração de IA e Ciência de Dados:
+**Integração de IA e Ciência de Dados:**
 +	Bibliotecas como Pandas para limpeza e manipulação dos dados.
 +	Scikit-learn ou TensorFlow/Keras podem ser aplicados para construir modelos preditivos ou de classificação com base nos dados armazenados.
 +	Rotinas periódicas (por exemplo, via cron jobs ou tarefas agendadas com o Celery) para processar os dados, gerar métricas e criar relatórios automáticos.
-✅  Boas Práticas de Segurança Adicionais:
+**Boas Práticas de Segurança Adicionais:**
 +	Validação e sanitização completa de todas as entradas no lado do cliente e do servidor.
 +	Testes de penetração utilizando ferramentas especializadas para identificar e corrigir vulnerabilidades.
 +	Implementação de logs centralizados e monitoramento para detecção precoce de atividades suspeitas.
-+	
+
 ###Front-end e Dashboard Interativo:
-✅ Framework e Biblioteca:
-+  Tecnologias utilizadas html, css e javascript.  
-✅ Componentes de Visualização:
-+ 	Serão utilizadas bibliotecas de gráficos interativos como Chart.js para exibir relatórios analíticos e dashboards. Esse componente pode oferecer funcionalidades de filtragem, seleção de período e personalização dos gráficos, permitindo que o usuário explore os dados de diferentes ângulos.
-✅ Comunicação com o Back-end:
-+  front-end deve consumir as APIs RESTful do back-end, utilizando chamadas seguras (HTTPS, tokens de autenticação) para manusear e exibir os dados de forma dinâmica.com websockets para atualizações em tempo real nos gráficos.
-✅ Integração de IA e Ciência de Dados:
+**Framework e Biblioteca:**
++  Tecnologias utilizadas html, css e javascript.<br> 
+**Componentes de Visualização:**
++ 	Serão utilizadas bibliotecas de gráficos interativos como Chart.js para exibir relatórios analíticos e dashboards. Esse componente pode oferecer funcionalidades de filtragem, seleção de período e personalização dos gráficos, permitindo que o usuário explore os dados de diferentes ângulos.<br>
+**Comunicação com o Back-end:**
++  front-end deve consumir as APIs RESTful do back-end, utilizando chamadas seguras (HTTPS, tokens de autenticação) para manusear e exibir os dados de forma dinâmica.com websockets para atualizações em tempo real nos gráficos.<br>
+**Integração de IA e Ciência de Dados:**
 +	Pipeline de Dados e Relatórios Analíticos:
-+	Extração e Transformação: scripts automatizados que periodicamente extraiam os dados do banco, façam limpeza e transformações necessárias.
-✅ Análise e Modelagem:
++	Extração e Transformação: scripts automatizados que periodicamente extraiam os dados do banco, façam limpeza e transformações necessárias.<br>
+**Análise e Modelagem:**
 +	Algoritmos de machine learning para identificar padrões, prever tendências ou segmentar dados.
-+	Relatórios analíticos que sumarizem resultados, quais podem ser disponibilizados de forma interativa no dashboard e exportáveis para formatos como PDF ou CSV.
-✅ Feedback e Alertas:
++	Relatórios analíticos que sumarizem resultados, quais podem ser disponibilizados de forma interativa no dashboard e exportáveis para formatos como PDF ou CSV.<br>
+**Feedback e Alertas:**
 +	Notificações no sistema para alertar os usuários quando determinados indicadores alcançarem valores críticos ou quando novas análises forem geradas.
 
 ## 2.1 – Levantamento de Requisitos
