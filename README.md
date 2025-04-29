@@ -147,8 +147,8 @@ O sistema terá as seguintes telas, projetadas para oferecer uma experiência de
 +	Tela de Importação de Dados: Interface para seleção de arquivos (PDF, XLSX, TXT) e integração via webservices.
 
 ## 6. Considerações Finais
-+	Integração Contínua / Deploy: Recomenda-se a utilização de Docker para containerização, pipelines CI/CD (por exemplo, via GitHub Actions) e deploy em um ambiente Cloud seguro.
-+	Testes e Validação: Desenvolva testes automatizados (unitários e integrados) para cada módulo, garantindo a qualidade do código e a segurança contra vulnerabilidades.
++	Integração Contínua / Deploy: utilização de Docker para containerização, pipelines CI/CD (por exemplo, via GitHub Actions) e deploy em um ambiente Cloud seguro.
++	Testes e Validação: testes automatizados (unitários e integrados) para cada módulo, garantindo a qualidade do código e a segurança contra vulnerabilidades.
 +	Evolução do Sistema: Com o MVP implementado, novas funcionalidades (novos dashboards, aprimoramentos dos modelos de IA e Data Science) poderão ser incorporadas, sempre com monitoramento e auditoria para atender novos requisitos legais e de negócio.
     Essa proposta unifica o projeto apresentado anteriormente com os novos requisitos para a gestão de atendimentos médicos, garantindo uma solução robusta, segura e que traz insights valiosos para a tomada de decisões.
     Gostaria de aprofundar algum dos módulos específicos, discutir estratégias para a integração com os webservices ou quem sabe explorar ideias para os modelos preditivos? Posso também detalhar como configurar cada parte da infraestrutura ou como estruturar os testes automatizados para garantir a qualidade e a segurança da aplicação.
